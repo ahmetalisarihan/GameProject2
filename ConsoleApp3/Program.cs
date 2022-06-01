@@ -6,7 +6,18 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
+            GamerManager gamerManager = new GamerManager(new Concretes.UserValidationManager());
+            gamerManager.Add(new Gamer
+            { 
+            Id =1,
+            BirthYear = 1994,
+            FirstName = "AHMET ALİ",
+            LastName ="SARIHAN",
+            IdentityNumber = 57607308534
+            
+
+            });
+
+;        }
     }
 }
